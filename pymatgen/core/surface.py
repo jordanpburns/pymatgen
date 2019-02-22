@@ -1210,7 +1210,7 @@ class SlabGenerator:
         return Slab(init_slab.lattice, slab.species, slab.frac_coords,
                     init_slab.miller_index, init_slab.oriented_unit_cell,
                     init_slab.shift, init_slab.scale_factor,
-                    energy=init_slab.energy)
+                    energy=init_slab.energy, site_properties=init_slab.site_properties)
 
     def nonstoichiometric_symmetrized_slab(self, init_slab, tol=1e-3):
 
